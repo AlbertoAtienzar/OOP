@@ -15,7 +15,7 @@ namespace OOP
         }
         public void SetName(string value)
         {
-            Name = value.ToUpper();
+            Name = value;
         }
 
         /*public void SetName(string name) 
@@ -30,6 +30,15 @@ namespace OOP
         public string GetName()
         {
             return Name;
+        }
+
+        public Student()
+        { 
+        }
+        public Student(string Name, int Nia)
+        {
+            this.Name = Name;
+            this.Nia = Nia;
         }
     }
 
