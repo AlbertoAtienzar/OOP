@@ -35,7 +35,28 @@ namespace OOP
             }
             return -1;
         }
-        
-        
+
+        public void RemoveStudent(string name)
+        {
+            int index = GetStudentIndex(name);///para saber cual es la posicion de la presona que queremos saber.
+            if(index >= 0)
+            studentList.RemoveAt(index);
+        }
+        public void RemoveStudent2(int nia)
+        {
+            int index = GetStudentIndex2(nia);///para saber cual es la posicion de la presona que queremos saber.
+            if (index >= 0)
+            studentList.RemoveAt(index);
+        }
+        public int GetStudentIndex2(int nia)
+        {
+            for (int i = 0; i < studentList.Count; i++)
+            {
+                Student student = studentList[i];
+                if (student.GetNia() == nia)//SE pone el toupper pare que puedas buscar tanto en mayus como en minus y que no de error
+                    return i;
+            }
+            return -1;
+        }
     }
 }

@@ -22,8 +22,10 @@ namespace OOP
             Console.WriteLine("El Nia del alumno es " + st.GetNia() + " y su nombre es " + st.GetName());
             Console.WriteLine("El Nia del alumno es " + st2.GetNia() + " y su nombre es " + st2.GetName());
 
-            bool test = db.ContainsStudent("Alberto");
-            db.GetStudentIndex("NEREA");
+            //bool test = db.ContainsStudent("Alberto");
+            //db.GetStudentIndex("NEREA");
+           
+            db.RemoveStudent2(5);
         }
     }
 }
